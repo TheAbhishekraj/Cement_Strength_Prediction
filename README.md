@@ -3,6 +3,8 @@ The aim of this project is to develop an automated sensor fault detection system
 
 #### Dataset is taken from Kaggle and stored in mongodb
 
+Steps to followed for Machine Learning projects:
+
 1. create enviorment venv file
 2. create README.md file
 3. create requirements.txt file 
