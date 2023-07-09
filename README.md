@@ -5,10 +5,10 @@ The aim of this project is to develop an automated sensor fault detection system
 
 Steps to followed for Machine Learning projects:
 
-1. create enviorment venv file
+1. create enviorment venv file :conda create --prefix venv python==3.8 -y & ```conda activate venv/```
 2. create README.md file
-3. create requirements.txt file 
-4. create setup.py ,application.py file
+3. create requirements.txt file : pip install -r requirements.txt
+4. create setup.py ,application.py file : python setup.py install
 5. create gitignore file(blank)
 6. Create src ,notebooks, templates ,artifacts folder (blank)
 7. Create src subfoler anf file naming compomnets/ ,pipelines\, init,exception,logger,utils
@@ -16,3 +16,8 @@ Steps to followed for Machine Learning projects:
 9. under src/pipelines/ create file name init , train_pipeline & predict_piplines
 10. under noteboolks/ paste the daatset in csv format. 
 11. create repository in github and push the code to github
+12. Now create an ipyn file and to the EDA and model training of the data in notebooks folder
+13. while working in jupyter notebook file make sure use :pip install ipykernel to install kernel
+14. Complete the utlis ,exception, logger file codings.
+15. Create Model File notebooks
+16. 
