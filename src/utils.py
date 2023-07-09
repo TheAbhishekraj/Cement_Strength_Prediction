@@ -21,7 +21,7 @@ def read_yaml_file(filename: str) -> dict:
             return yaml.safe_load(yaml_file)
 
     except Exception as e:
-         logging.info('Exception Occured in loading yaml function utils')
+        logging.info('Exception Occured in loading yaml function utils')
         raise CustomException(e, sys) from e
 
 def read_schema_config_file() -> dict:
@@ -33,14 +33,14 @@ def read_schema_config_file() -> dict:
 
     except Exception as e:
         logging.info('Exception Occured in read_schema_config_file function utils')
-        raise CustomException(e, sys) from e
+        raise CustomException(e, sys)
 
 
 
 
 def export_collection_as_dataframe(collection_name, db_name):
     try:
-        mongo_client = MongoClient(os.getenv("MONGO_DB_URL"))
+        mongo_client = MongoClient(os.getenv("mongodb+srv://rajabhi2602:<password>@mlprojects.eyaomsx.mongodb.net/?retryWrites=true&w=majority"))
 
         collection = mongo_client[db_name][collection_name]
 
@@ -78,7 +78,7 @@ def load_object(file_path):
             return dill.load(file_obj)
 
     except Exception as e:
-         logging.info('Exception Occured in loading pickle function utils')
+        logging.info('Exception Occured in loading pickle function utils')
         raise CustomException(e, sys)
 
 
@@ -89,7 +89,7 @@ def upload_file(from_filename, to_filename, bucket_name):
         s3_resource.meta.client.upload_file(from_filename, bucket_name, to_filename)
 
     except Exception as e:
-         logging.info('Exception Occured in uploadings file function utils')
+        logging.info('Exception Occured in uploadings file function utils')
         raise CustomException(e, sys)
 
 

@@ -80,7 +80,7 @@ class DataTransformation:
             raise CustomException(e, sys)
 
 
-    logging.info("Transformation of datafram initiated")
+    logging.info("Transformation of dataframe initiated")
     def initiate_data_transformation(self, 
                                      train_file_path: str,
                                      test_file_path: str):
